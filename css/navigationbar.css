@@ -1,0 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+
+header {
+    background-color: darkred ;
+}
+h1 {
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+}
+
+.navigation {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    position: center;
+    overflow-inline: none;
+    background-color: darkred;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.navigation-bar, .navigation-categ {
+    list-style: none;
+    text-decoration: none;
+}
+
+.navigation .navigation-opts {
+    width: 20%;
+    color: black
+    padding-top: 2%;
+    padding-bottom 2%;
+    float: left;
+    background-color: darkred;
+}
+
+.navigation > .navigation-opts {
+    float: left;
+}
+
+.navigation-categ  {
+    display: none;
+    position: absolute; 
+    background-color: pink;
+    cursor: pointer;
+}
+
+
+li:hover > ul  {
+    display: block;
+}
+
+
+nav .navigation-bar li .navigation-categ li {
+    position: relative;
+}
+
