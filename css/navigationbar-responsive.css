@@ -1,0 +1,180 @@
+.navbar {
+    position: fixed;
+    /* width=100% mejor que width=100vw porqué con el inspeccionador la barra de scroll que aparece tapa contenido si lo acemos con 100vw */
+    height: var(--navigation-bar-height);
+    width: 100%;
+    max-width: 100vw;
+    background-color: rgba(24, 23, 23, 0.7);
+    top: 0;
+    left: 0; 
+    font-size: 40px;
+}
+
+.burger-label, input[type="checkbox"]  {
+    position: absolute;
+    background-color: transparent;
+    top: 1rem;
+    left: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+  
+.burger-label:before {
+    content: '';
+    background-color: whitesmoke;
+    width: 1.5rem;
+    height: 0.2rem;
+    position: absolute;
+    left: 0.45rem;
+    top: 0.25rem;
+    box-shadow: 0 0.4rem 0 0 whitesmoke, 0 0.8rem 0 0 whitesmoke;
+}
+/*Para que los pseudoselectores como :before y :after funcionen se requiere que haya contenido. Aplicar un content:" "; es una solución para poder aplicarlo */
+
+.burger-label {
+    background-color: transparent;
+    font-family: 'Texturina';
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+#burger-checkbox {
+    display: none;
+}
+
+.logo {
+    color: white;
+    background-color: transparent;
+    float: left;
+    margin: 0 0.5rem 0 6rem;
+    line-height: var(--navigation-bar-height);
+    font-family: 'Fredericka the Great';
+    font-size: 40px;
+}
+
+.navbar-list.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search {
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 18px;
+    padding: 0.6rem 0.5rem;
+}
+
+/*menu cerrado*/
+.navbar-list, .categ-bar {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*menu abierto*/
+#burger-checkbox:checked ~ .navbar-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: var(--navigation-bar-height);
+    /* align-items: center; no permite clickar en los laterales, peor opción por accesibilidad y UX */ 
+    /* sin align-items: center. el búscador se queda descentrado y no logro volver a centrarlo*/
+    background-color: rgba(24, 23, 23, 0.7);
+}
+
+#burger-checkbox:checked ~ .navbar-list > .search {
+    text-align: center;
+    background-color: rgba(24, 23, 23, 0.7);
+}
+
+.navbar-list a, .navbar-item a{
+    display: block;
+    text-align: center;
+    color: #A33915;
+    font-family: 'Texturina';
+    font-size: 30px;
+    text-decoration: none;
+    line-height: var(--navigation-bar-height);
+    margin: 0;
+    background-color: rgba(24, 23, 23, 0.7);
+    padding: 0.5rem 0.5rem;
+}
+
+.categ-item a{
+    color: #A33915;
+    font-family: 'Texturina';
+    font-size: 30px;
+    width: 100%;
+    line-height: var(--navigation-bar-height);
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(24, 23, 23, 0.7);
+    padding: 5px 5px;
+}
+
+.navbar .navbar-item:hover .categ-bar{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar .navbar-item .categ-bar{
+    display: none;
+}
+
+.navbar .navbar-item a:hover{
+    background-color: white;
+    color: #722810;
+    transition: background-color 1s linear;
+}
+
+.navbar .navbar-item a:active{
+    background-color: white;
+    box-shadow: 0 -5px 2px rgb(131, 128, 128) inset;
+    /* con la opción inset de la sombra, la sobra queda dentro del botón dándo el efecto de pulsado sin modificar el ancho de la barra en ese momento */
+}
+
+
+@media (min-width: 770px) {
+
+    .logo {
+        position: relative;
+        margin: 0 1rem;
+        padding: 0 0.5rem;
+    }
+
+    .navbar .burger-label {
+      display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(24,23,23);
+    }
+    
+    #search {
+        background-color: rgb(24,23,23);
+    }
+
+    .navbar-list {
+        display: flex;
+        padding: 0;
+    }
+    
+    .navbar-item a{
+        width: var(--navigation-opt-wight);
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 770px){
+    .navbar-list {
+        display: none;
+    }
+}

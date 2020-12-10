@@ -5,33 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/icon.ico"/>
     <link href="css/styles.css" rel="stylesheet">
-    <link href="css/navigationbar.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/navigationbar-responsive.css" rel="stylesheet">
+    <link href="css/categories.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <!--<link href="css/carousel.css" rel="stylesheet">-->
     <title>Terror films</title>
 </head>
 <body>
     <header>
-        <h1>Terror films online</h1>
-        <nav class="navigation">
-            <ul class="navigation-bar">
-                <li class="navigation-opts" id="inicio"><a href="#inicio">Inicio</a></li>
-                <li class="navigation-opts" id="trending"><a href="#trending">Tendencias</a></li>
-                <li class="navigation-opts" id="categories"><a href="#categories">Categorias</a>
+        <nav class="navbar" id="navbar">
+            <input type="checkbox" id="burger-checkbox" />
+            <label for="burger-checkbox" class="burger-label"></label>
+            <div class="logo">TERROR FILMS</div>
+            <ul class="navbar-list">
+                <li class="navbar-item search" id="search"><label for="search">Search: </label>
+                    <input type="search" id="search" name="s" size=18 maxlength="18" placeholder="film, actor..."></li> 
+                <!--<li class="navbar-item" id="inicio"><a href="#inicio">Inicio</a></li>-->
+                <li class="navbar-item"><a href="#trending">Tendencias</a></li>
+                <li class="navbar-item"><a href="#categories">Género</a>
                 <ul class="categ-bar">
-                    <li class="navigation-categ" id="zombies"><a href="#zombies">Zombies</a></li>
-                    <li class="navigation-categ" id="vampires"><a href="#vampires">Vampiros</a></li>
-                    <li class="navigation-categ" id="stabs"><a href="#stabs">Asesinos</a></li>
-                    <li class="navigation-categ" id="thriller"><a href="#thriller">Suspense</a></li>
+                    <li class="categ-item"><a href="#zombies">Zombies</a></li>
+                    <li class="categ-item"><a href="#vampires">Vampiros</a></li>
+                    <li class="categ-item"><a href="#stabs">Asesinos</a></li>
+                    <li class="categ-item"><a href="#paranormal">Paranormal</a></li>
+                    <!-- Para que los enlaces funcionen, en el menú no debemos poner id="trending" sino unicamente en la sección correspondiente-->
                 </ul></li>
-                <li class="navigation-opts" id="newest"><a href="#newest">Novedades</a></li>
-                <li class="navigation-opts" id="login"><a href="#login">Acceso</a></li>
+                <li class="navbar-item"><a href="#newest">Novedades</a></li>
+                <li class="navbar-item"><a href="login.html">Acceso</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident culpa est ad sed, nostrum, iusto porro dolore fugit maiores, quas quaerat. Labore quibusdam repudiandae adipisci fuga vitae corrupti provident dolore.
-        </p>
+        <section class="trending-wrapper">
+            <div id="trending" class="trending-header"><h1>Tendencias</h1></div>
+        </section>
+
+        <section class="categories-wrapper">
+            <div id="categories" class="trending-header"><h1>Géneros</h1></div>
+            <section id="zombies" class="zombies-header"><h2>Zombies</h2>
+                <div class="zombies-items"><img src="images/posters/rec3.jpg" title="Rec 3: El comienzo"></div>
+                <div class="zombies-items"><img src="images/posters/resident-evil.jpg" title="Resident Evil: Capítulo final"></div>
+                <div class="zombies-items"><img src="images/posters/train-to-busan-two.jpg" title="Train to busan 2: station"></div>
+                <div class="zombies-items"><img src="images/posters/zombieland-2.jpg" title="Zombieland 2: double tap"></div>
+            </section>
+            <section id="vampires" class="vampires-header"><h2>Vampiros</h2>
+                <div class="vampires-items"><img src="images/posters/vampires-bronx-pq.jpg" title="Vampiros vs El Bronx"></div>
+                <div class="vampires-items"><img src="images/posters/buffy.jpg" title="Buffy Cazavampiros"></div>
+                <div class="vampires-items"><img src="images/posters/dracula.jpg" title="Drácula"></div>
+                <div class="vampires-items"><img src="images/posters/freaks-of-nature.jpg" title="Freaks of Nature"></div>
+            </section>
+            <section id="stabs" class="stabs-header"><h2>Asesinos</h2>
+                <div class="stabs-items"><img src="images/posters/scream.jpg" title="Scream"></div>
+                <div class="stabs-items"><img src="images/posters/saw.jpg" title="Saw"></div>
+                <div class="stabs-items"><img src="images/posters/texas.jpg" title="La Matanza de Texas: EL Origen"></div>
+                <div class="stabs-items"><img src="images/posters/halloween.jpg" title="Halloween"></div>
+            </section>
+            <section id="paranormal" class="paranormal-header"><h2>Sucesos paranormales</h2>
+                <div class="paranormal-items"><img src="images/posters/insidious.jpg" title="Insidious"></div>
+                <div class="paranormal-items"><img src="images/posters/sinister.jpg" title="Sinister"></div>
+                <div class="paranormal-items"><img src="images/posters/poltergeist.jpg" title="Polstergeist"></div>
+                <div class="paranormal-items"><img src="images/posters/autopsia-jane-doe.jpg" title="La Autopsia de Jane Doe"></div>
+            </section>
+        </section>
+
+        <section class="newest-wrapper">
+            <div id="newest" class="trending-header section"><h1>Novedades</h1></div>
+        </section>
     </main>
-    <img id="likemark" src="images/like.svg">
-    <img id="likemark" src="images/likepending.svg">
+    <footer>
+        <div class="logo-footer">TERROR FILMS</div>
+        <div class="text-footer">
+          <p>Terror Films S.L.</p>
+          <p>Todos los derechos reservados</p>
+        </div>
+        <div class="links-footer">
+          <a class="social" href="https://www.instagram.com/official.michaelmyers/?hl=es" target="_blank" rel="noopener noreferrer nofollow"><img src="images/ig.png"></a>
+          <a class="social" href="https://www.facebook.com/ryanmurphylatino/" target="_blank" rel="noopener noreferrer nofollow"><img src="images/fb.png"></a>
+          <a class="social" href="https://twitter.com/terrormolins?lang=es" target="_blank" rel="noopener noreferrer nofollow"><img src="images/twitter.png"></a>
+        </div>
+      </footer>
 </body>
 </html>

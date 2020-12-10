@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.ico"/>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/navigationbar-responsive.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <title>Terror films - Acceso</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="navbar">
+            <input type="checkbox" id="burger-checkbox" />
+            <label for="burger-checkbox" class="burger-label"></label>
+            <div class="logo">TERROR FILMS</div>
+            <ul class="navbar-list">
+                <li class="navbar-item search" id="search"><label for="search">Search: </label>
+                    <input type="search" id="search" name="s" size=18 maxlength="18" placeholder="film, actor..."></li> 
+                <!--<li class="navbar-item" id="inicio"><a href="#inicio">Inicio</a></li>-->
+                <li class="navbar-item"><a href="index.html#trending">Tendencias</a></li>
+                <li class="navbar-item"><a href="index.html#categories">Género</a>
+                <ul class="categ-bar">
+                    <li class="categ-item"><a href="index.html#zombies">Zombies</a></li>
+                    <li class="categ-item"><a href="index.html#vampires">Vampiros</a></li>
+                    <li class="categ-item"><a href="index.html#stabs">Asesinos</a></li>
+                    <li class="categ-item"><a href="index.html#paranormal">Paranormal</a></li>
+                </ul></li>
+                <li class="navbar-item"><a href="index.html#newest">Novedades</a></li>
+                <li class="navbar-item"><a href="index.html">Salir</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="login-area">
+          <div class="login-title">
+            <h1>Acceso usuarios</h1>
+          </div>
+            <form
+              action="enter-to-site.html"
+              method="GET"
+              name="login-form"
+              id="login-form"
+              class="login-form"
+            >
+              <div class="user-data">
+                  <p class="email-label">
+                    <label for="email">Usuario:</label>
+                  </p>
+                  <input type="email" id="email" name="email" required placeholder="mail.address@example.com" max-length="25"/>
+              </div>
+              <div class="user-password">
+                  <p class="password-label">
+                    <label for="password">Contraseña:</label>
+                  </p>
+                  <input type="password" id="password" name="password" placeholder="contraseña" required max-length="10" />
+              </div>
+              <p class="actions">
+                <input type="submit" value="Entrar" />
+              </p>
+              <p class="reset-password">¿Has olvidado tu <strong>contraseña</strong>? Pulsa <a href="#" target="_blank">aquí</a> para restablecer la <strong>contraseña</strong></p>
+            </form>
+        </div>
+    </main>
+    <footer>
+      <div class="logo-footer">TERROR FILMS</div>
+      <div class="text-footer">
+        <p>Terror Films S.L.</p>
+        <p>Todos los derechos reservados</p>
+      </div>
+      <div class="links-footer">
+        <a class="social" href="https://www.instagram.com/official.michaelmyers/?hl=es" target="_blank" rel="noopener noreferrer nofollow"><img src="images/ig.png"></a>
+        <a class="social" href="https://www.facebook.com/ryanmurphylatino/" target="_blank" rel="noopener noreferrer nofollow"><img src="images/fb.png"></a>
+        <a class="social" href="https://twitter.com/terrormolins?lang=es" target="_blank" rel="noopener noreferrer nofollow"><img src="images/twitter.png"></a>
+        <!-- rel="noopener noreferrer nofollow es fundamental para temas de seguridad, evitar que alguién de esa web ajena a la que estamos direccionando pueda editar la nuestra-->
+      </div>
+    </footer>
+</body>
+</html>

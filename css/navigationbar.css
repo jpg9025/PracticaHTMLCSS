@@ -1,59 +1,188 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Texturina:wght@600&display=swap");
 
-
-header {
-    background-color: darkred ;
-}
-h1 {
-    font-family: 'Fredericka the Great', cursive;
-    text-align: center;
-}
 
 .navigation {
+    /* width=100% mejor que width=100vw porqué con el inspeccionador la barra de scroll que aparece tapa contenido si lo acemos con 100vw */
+    height: var(--navigation-bar-height);
     width: 100%;
-    margin: 0%;
-    padding: 0%;
-    position: center;
-    overflow-inline: none;
-    background-color: darkred;
-    font-family: 'Fredericka the Great', cursive;
+    background-color: rgba(24, 23, 23, 0.7);
+    position: fixed;
+    top: 0;
+    font-size: 30px;
 }
 
-.navigation-bar, .navigation-categ {
+.burger-label, input[type="checkbox"]  {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+  
+.burger-label:before {
+    content: '';
+    background-color: whitesmoke;
+    width: 1.5rem;
+    height: 0.2rem;
+    position: absolute;
+    left: 0.45rem;
+    top: 0.25rem;
+    box-shadow: 0 0.4rem 0 0 whitesmoke, 0 0.8rem 0 0 whitesmoke;
+}
+
+#burger-checkbox {
+    display: none;
+}
+
+.logo {
+    color: white;
+    background-color: transparent;
+    float: left;
+    margin: 0 0.5rem 0 6rem;
+    line-height: var(--navigation-bar-height);
+    font-family: 'Fredericka the Great';
+    font-size: 40px;
+}
+
+
+label {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: 'Texturina';
+    color: white;
+    height: var(--navigation-bar-height);
+}
+
+#search {
+    padding: 0;
+    margin: 0.25rem 0.5rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    height: var(--search-height);
+    background-color: transparent;
+    border-radius: 10%;
+    border-color: whitesmoke;
+}
+
+.navigation-bar {
+    height: var(--navigation-bar-height);
     list-style: none;
     text-decoration: none;
+    text-align: center;
+    margin: 0;
+    padding-right: 0.5rem;
+    padding: 0;
+    background-color: transparent;
 }
 
-.navigation .navigation-opts {
-    width: 20%;
-    color: black
-    padding-top: 2%;
-    padding-bottom 2%;
-    float: left;
-    background-color: darkred;
-}
-
-.navigation > .navigation-opts {
-    float: left;
-}
-
-.navigation-categ  {
-    display: none;
-    position: absolute; 
-    background-color: pink;
-    cursor: pointer;
+.navigation-categ {
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding-right: 0.5rem;
+    padding: 0;
+    height: var(--navigation-bar-height);
 }
 
 
-li:hover > ul  {
+.navigation-bar .navigation-opts a{
+    color: #A33915;
+    font-family: 'Texturina';
+    width: var(--navigation-opt-wight);
+    height: var(--navigation-bar-height);
     display: block;
+    background-color: rgba(24, 23, 23, 0.7);;
+    text-decoration: none;
+    padding: 5px 5px;
 }
 
+.navigation-bar > .navigation-opts {
+    float: left;
+}
 
-nav .navigation-bar li .navigation-categ li {
+.navigation-bar .navigation-opts a:hover{
+    background-color: white;
+    color: #722810;
+    transition: background-color 1s linear;
+}
+
+.navigation-bar .navigation-opts a:active{
+    background-color: white;
+    box-shadow: 0 -5px 2px rgb(131, 128, 128) inset;
+    /* con la opción inset de la sombra, la sobra queda dentro del botón dándo el efecto de pulsado sin modificar el ancho de la barra en ese momento */
+}
+
+.navigation-bar .navigation-opts .categ-bar{
+    width: var(--navigation-opt-wight);
+    display: none;
+}
+
+.navigation-bar .navigation-opts:hover .categ-bar{
+    display: block;
+    position: absolute;
+}
+
+.navigation-bar .navigation-opts:hover .categ-bar .navigation-opts {
+    top: 0;
+    right: 0;
     position: relative;
+    align-self: flex-start;
 }
 
+.navigation::after {
+    content : "";
+    display: block;
+    clear: both;
+}
+
+
+@media (max-width: 780px) {
+
+    .logo {
+        font-size: 20px;
+    }
+
+    #search {
+        display: none;
+    }
+
+    #burger-checkbox:checked ~ .navigation-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
+        top: var(--navigation-bar-height);
+        /* align-items: center; */ /* no puedo hacer click en los laterales */
+        background-color: rgba(24, 23, 23, 0.7);
+        height: calc(8*var(--navigation-bar-height));
+    }
+
+}
+
+
+@media all and (min-width: 780px) {
+
+    .navigation .burger-label {
+        display: none;
+    }
+
+    .navigation-bar {
+        float: right;
+    }
+
+    .navigation-opts {
+        display: inline-block;
+        margin: 0;
+        height: var(--navigation-bar-height);
+    }
+
+}

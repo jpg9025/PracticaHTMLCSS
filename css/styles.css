@@ -1,10 +1,56 @@
+:root {
+  --navigation-bar-height: 60px;
+  --navigation-opt-wight: 12vw;
+  --login-boxes-height: 40px;
+  --login-boxes-width: 200px;
+}
+/* en :root definimos las variables que podremos llamar desde el resto de hojas de estilo, siempre que esta haya sido cargada primero en el html */
+
+@import url("https://fonts.googleapis.com/css2?family=Texturina:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 @font-face {
-    font-family: "Cabin Sketch Regular";
-    src: url("https://fonts.google.com/specimen/Cabin+Sketch#standard-styles");
-    src:url("/css/fuentes/CabinSketch-Regular.ttf")
+  font-family: "Texturina";
+  src: url("https://fonts.googleapis.com/css2?family=Texturina:wght@600&display=swap");
 }
 
+body{
+  background-color:#251638;
+  font-family: 'Texturina' , 'Fredericka the Great';
+  box-sizing: border-box;
+  color: rgb(24, 23, 23);
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+/* Con esta propiedad se hace que el scroll del ratón sea más suave para la mayoría de navegadores */
 
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+h1, h2 {
+  color: white;
+  font-family:'Texturina','Fredericka the Great';
+  text-align: center;
+  width: 100%;
+  text-shadow: rgb(124, 116, 116) 2px 2px 2px;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 35px;
+  margin: 0.8rem;
+  padding: 0.8rem;
+}
+
+/*main {
+  position: absolute;
+  top: var(--navigation-bar-height);
+}*/
+
+main {
+  margin-top: var(--navigation-bar-height);
+}
