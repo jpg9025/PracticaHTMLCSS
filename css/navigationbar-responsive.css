@@ -33,7 +33,6 @@
 
 .burger-label {
     background-color: transparent;
-    font-family: 'Texturina';
     font-size: 30px;
     color: whitesmoke;
 }
@@ -94,7 +93,7 @@
     display: block;
     text-align: center;
     color: #A33915;
-    font-family: 'Texturina';
+    font-family: 'Texturina', 'Langar';
     font-size: 30px;
     text-decoration: none;
     line-height: var(--navigation-bar-height);
@@ -105,7 +104,7 @@
 
 .categ-item a{
     color: #A33915;
-    font-family: 'Texturina';
+    font-family: 'Texturina', 'Langar';
     font-size: 30px;
     width: 100%;
     line-height: var(--navigation-bar-height);
