@@ -118,6 +118,7 @@
     display: block;
     width: 100%;
     text-align: center;
+    transition: smooth;
 }
 
 .navbar .navbar-item .categ-bar{

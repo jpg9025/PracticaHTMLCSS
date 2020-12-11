@@ -7,6 +7,7 @@
         <link href="css/styles.css" rel="stylesheet">
         <link href="css/reset.css" rel="stylesheet">
         <link href="css/navigationbar-responsive.css" rel="stylesheet">
+        <link href="css/newest.css" rel="stylesheet">
         <link href="css/categories.css" rel="stylesheet">
         <link href="css/footer.css" rel="stylesheet">
         <!--<link href="css/carousel.css" rel="stylesheet">-->
@@ -38,11 +39,54 @@
         </header>
         <main>
             <section class="trending-wrapper">
-                <div id="trending" class="trending-header"><h1>Tendencias</h1></div>
+                <h1>Tendencias</h1>
+                <div id="trending" class="trending-container"></div>
+            </section>
+
+            <section class="newest-wrapper">
+                <h1>Novedades</h1>
+                <div id="newest" class="newest-container">
+                    <div class="vampires-items n-i-2">
+                        <img src="images/posters/vampires-bronx-pq.jpg" title="Vampiros vs El Bronx">
+                        <div class="film-desc">
+                            <h3>Vampiros vs El Bronx</h3>
+                            <strong>Osmany Rodriguez</strong> 
+                            <p>2020</br>Al estilo Goonies de ciudad, un grupo de niños (<em>Jaden Michael</em>, <em>Sarah Gadon</em> y <em>Coco Jones</em>) deben proteger su tranquilo barrio, el Bronx, de un grupo de vampiros con ganas de quedarse a vivir en el barrio</p>
+                        </div>
+                    </div>
+    
+                    <div class="zombies-items n-i-1">
+                        <img src="images/posters/zombieland-2.jpg" title="Zombieland 2: double tap">
+                        <div class="film-desc">
+                            <h3>Zombieland 2: mata y remata</h3>
+                            <strong>Ruben Fleischer</strong>
+                            <p>2019</br>Tras su paso por la casa blanca, el grupo de supervivientes (<em>Emman Stone</em>, <em>Woody Harellson</em>, <em>Abigail Breslin</em> y <em>Jesse Eisenberg</em>) se dirige al centro de EEUU, dónde deberán enfrentarse a nuevas mutaciones del virus</p>
+                        </div>
+                    </div>
+    
+                    <div class="paranormal-items n-i-4">
+                        <img src="images/posters/autopsia-jane-doe.jpg" title="La Autopsia de Jane Doe">
+                        <div class="film-desc">
+                            <h3>La Autopsia de Jane Doe</h3>
+                            <strong>André Ovredal</strong>
+                            <p>2016</br>En una morgue familiar, heredada de generación en generación, padre (<em>Brian Cox</em>) e hijo (<em>Emile Hirsch</em>) realizan la autopsia al cádaver de una joven (<em>Olwen Kelly</em>) muerta en extrañas circunstancias</p>
+                        </div>
+                    </div>
+    
+                    <div class="stabs-items n-i-3">
+                        <img src="images/posters/texas.jpg" title="La Matanza de Texas: EL Origen">
+                        <div class="film-desc">
+                            <h3>La Matanza de Texas</h3>
+                            <strong>Jonathan Liebesman</strong>
+                            <p>2006</br>Cara de cuero (<em>Andrew Bryniarski</em>) y su motosierra. Cine gore inclusivo, con un protagonista con diversidad funcional (<em>Lee Tergesen</em>) y las típicas víctimas que chillan y se esconden escaleras arriba para morir antes</p>
+                        </div>
+                    </div>
+                </div>
             </section>
     
             <section class="categories-wrapper">
-                <div id="categories" class="trending-header"><h1>Géneros</h1></div>
+                <h1>Géneros</h1>
+                <div id="categories" class="categories-container"></div>
                 <h2>Zombies</h2>
                 <section id="zombies" class="zombies-container">
                     <div class="zombies-items z-i-1">
@@ -200,9 +244,6 @@
                 </section>
             </section>
     
-            <section class="newest-wrapper">
-                <div id="newest" class="trending-header section"><h1>Novedades</h1></div>
-            </section>
         </main>
         
         <footer>
