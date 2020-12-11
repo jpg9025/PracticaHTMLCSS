@@ -1,3 +1,8 @@
+.login-area {
+    margin-bottom: 5rem;
+}
+/*Revisar porqué se descoloca el footer al acceder al apartado de login. Si le aplico display: abosulte, en index se queda a mitad de la pantalla y no baja*/
+
 .login-title {
     margin-top: calc(var(--navigation-bar-height) + 2.5rem);
     margin-bottom: 2.5rem;
