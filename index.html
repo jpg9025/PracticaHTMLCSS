@@ -24,6 +24,7 @@
                         <input type="search" id="search" name="s" size=18 maxlength="18" placeholder="film, actor..."></li> 
                     <!--<li class="navbar-item" id="inicio"><a href="#inicio">Inicio</a></li>-->
                     <li class="navbar-item"><a href="#trending">Tendencias</a></li>
+                    <li class="navbar-item"><a href="#newest">Novedades</a></li>
                     <li class="navbar-item"><a href="#categories">Género</a>
                     <ul class="categ-bar">
                         <li class="categ-item"><a href="#zombies">Zombies</a></li>
@@ -32,7 +33,6 @@
                         <li class="categ-item"><a href="#paranormal">Paranormal</a></li>
                         <!-- Para que los enlaces funcionen, en el menú no debemos poner id="trending" sino unicamente en la sección correspondiente-->
                     </ul></li>
-                    <li class="navbar-item"><a href="#newest">Novedades</a></li>
                     <li class="navbar-item"><a href="login.html">Acceso</a></li>
                 </ul>
             </nav>
@@ -46,14 +46,6 @@
             <section class="newest-wrapper">
                 <h1>Novedades</h1>
                 <div id="newest" class="newest-container">
-                    <div class="vampires-items n-i-2">
-                        <img src="images/posters/vampires-bronx-pq.jpg" title="Vampiros vs El Bronx">
-                        <div class="film-desc">
-                            <h3>Vampiros vs El Bronx</h3>
-                            <strong>Osmany Rodriguez</strong> 
-                            <p>2020</br>Al estilo Goonies de ciudad, un grupo de niños (<em>Jaden Michael</em>, <em>Sarah Gadon</em> y <em>Coco Jones</em>) deben proteger su tranquilo barrio, el Bronx, de un grupo de vampiros con ganas de quedarse a vivir en el barrio</p>
-                        </div>
-                    </div>
     
                     <div class="zombies-items n-i-1">
                         <img src="images/posters/zombieland-2.jpg" title="Zombieland 2: double tap">
@@ -63,13 +55,14 @@
                             <p>2019</br>Tras su paso por la casa blanca, el grupo de supervivientes (<em>Emman Stone</em>, <em>Woody Harellson</em>, <em>Abigail Breslin</em> y <em>Jesse Eisenberg</em>) se dirige al centro de EEUU, dónde deberán enfrentarse a nuevas mutaciones del virus</p>
                         </div>
                     </div>
-    
-                    <div class="paranormal-items n-i-4">
-                        <img src="images/posters/autopsia-jane-doe.jpg" title="La Autopsia de Jane Doe">
+
+                    <div class="vampires-items n-i-2">
+                        <img class="like" src="images/likepending.svg">
+                        <img src="images/posters/vampires-bronx-pq.jpg" title="Vampiros vs El Bronx">
                         <div class="film-desc">
-                            <h3>La Autopsia de Jane Doe</h3>
-                            <strong>André Ovredal</strong>
-                            <p>2016</br>En una morgue familiar, heredada de generación en generación, padre (<em>Brian Cox</em>) e hijo (<em>Emile Hirsch</em>) realizan la autopsia al cádaver de una joven (<em>Olwen Kelly</em>) muerta en extrañas circunstancias</p>
+                            <h3>Vampiros vs El Bronx</h3>
+                            <strong>Osmany Rodriguez</strong> 
+                            <p>2020</br>Al estilo Goonies de ciudad, un grupo de niños (<em>Jaden Michael</em>, <em>Sarah Gadon</em> y <em>Coco Jones</em>) deben proteger su tranquilo barrio, el Bronx, de un grupo de vampiros con ganas de quedarse a vivir en el barrio</p>
                         </div>
                     </div>
     
@@ -79,6 +72,15 @@
                             <h3>La Matanza de Texas</h3>
                             <strong>Jonathan Liebesman</strong>
                             <p>2006</br>Cara de cuero (<em>Andrew Bryniarski</em>) y su motosierra. Cine gore inclusivo, con un protagonista con diversidad funcional (<em>Lee Tergesen</em>) y las típicas víctimas que chillan y se esconden escaleras arriba para morir antes</p>
+                        </div>
+                    </div>
+
+                    <div class="paranormal-items n-i-4">
+                        <img src="images/posters/autopsia-jane-doe.jpg" title="La Autopsia de Jane Doe">
+                        <div class="film-desc">
+                            <h3>La Autopsia de Jane Doe</h3>
+                            <strong>André Ovredal</strong>
+                            <p>2016</br>En una morgue familiar, heredada de generación en generación, padre (<em>Brian Cox</em>) e hijo (<em>Emile Hirsch</em>) realizan la autopsia al cádaver de una joven (<em>Olwen Kelly</em>) muerta en extrañas circunstancias</p>
                         </div>
                     </div>
                 </div>
@@ -247,15 +249,14 @@
         </main>
         
         <footer>
-            <div class="logo-footer">TERROR FILMS</div>
-            <div class="text-footer">
-              <p>Terror Films S.L.</p>
-              <p>Todos los derechos reservados</p>
-            </div>
-            <div class="links-footer">
-              <a href="https://www.instagram.com/official.michaelmyers/?hl=es" target="_blank" rel="noopener noreferrer nofollow"><img src="images/ig.png"></a>
-              <a href="https://www.facebook.com/ryanmurphylatino/" target="_blank" rel="noopener noreferrer nofollow"><img src="images/fb.png"></a>
-              <a href="https://twitter.com/terrormolins?lang=es" target="_blank" rel="noopener noreferrer nofollow"><img src="images/twitter.png"></a>
+            <div class="footer-wrapper">
+                <div class="logo-footer">TERROR FILMS</div>
+                <div class="links-footer">
+                  <a href="https://www.instagram.com/official.michaelmyers/?hl=es" target="_blank" rel="noopener noreferrer nofollow"><img src="images/ig.png"></a>
+                  <a href="https://www.facebook.com/ryanmurphylatino/" target="_blank" rel="noopener noreferrer nofollow"><img src="images/fb.png"></a>
+                  <a href="https://twitter.com/terrormolins?lang=es" target="_blank" rel="noopener noreferrer nofollow"><img src="images/twitter.png"></a>
+                   <!-- rel="noopener noreferrer nofollow es fundamental para temas de seguridad, evitar que alguién de esa web ajena a la que estamos direccionando pueda editar la nuestra-->
+                </div>
             </div>
         </footer>
     </body>

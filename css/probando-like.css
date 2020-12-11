@@ -1,0 +1,27 @@
+body {
+    background-color: pink;
+}
+
+.like {
+    background-color: blue;
+    width: 20%;
+    height: 20%;
+}
+
+#checkbox-like + label {
+    display: none;
+}
+
+#checkbox-like:checked + label {
+    display: block;
+}
+
+#checkbox-like:checked ~ .likepending-img {
+    display: none;
+}
+
+#checkbox-like {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}

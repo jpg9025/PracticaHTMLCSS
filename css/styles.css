@@ -28,10 +28,10 @@ html {
 /* Con esta propiedad se hace que el scroll del ratón sea más suave para la mayoría de navegadores */
 
 h1, h2 {
+  position: center;
   color: white;
   font-family: 'Roboto';
   text-align: center;
-  width: 100%;
   text-shadow: rgb(124, 116, 116) 2px 2px 2px;
 }
 

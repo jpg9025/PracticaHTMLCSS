@@ -9,7 +9,7 @@
     font-size: 40px;
 }
 
-.burger-label, input[type="checkbox"]  {
+.burger-label, #burger-checkbox  {
     position: absolute;
     background-color: transparent;
     top: 1rem;
@@ -153,11 +153,11 @@
     .navbar {
         display: flex;
         justify-content: space-between;
-        background-color: rgb(24,23,23);
+        background-color: rgba(24, 23, 23, 0.7);
     }
     
     #search {
-        background-color: rgb(24,23,23);
+        background-color: transparent;
     }
 
     .navbar-list {
