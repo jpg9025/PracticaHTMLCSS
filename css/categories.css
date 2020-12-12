@@ -11,9 +11,8 @@
     padding: 0.2rem;
 }
 
-.film-desc strong {
-    font-size: 1rem;
-    padding: 1rem;
+.film-desc p strong {
+    font-size: 1.5rem;
 }
 
 .film-desc p {
@@ -48,6 +47,10 @@
         position: relative;
         margin: 1rem;
         padding: 0.5rem;
+    }
+
+    .film-desc h3 a {
+        color: whitesmoke;
     }
 }
 
@@ -101,6 +104,16 @@
         height: 554px;
         width: 368px;
         background-color:  rgba(24, 23, 23, 0.7);
+    }
+
+    .film-desc h3 a {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    
+    .film-desc h3 a:hover {
+        text-decoration: underline;
+        color: whitesmoke;
     }
 
 }

@@ -63,6 +63,7 @@ input[type="submit"] {
     border: none;
     box-shadow: 2px 2px 5px black, -2px -2px 5px #3e1f66;
     border-radius: 0.5rem;
+    background-color: white;
     /*background-color: grey;
     background-image: linear-grandient (grey, black, pink);
     Hay mucho navegadores que no aceptan el gradiente de fondo, por eso, se pone primero la opción que aceptan todos los navegadores y después la que es posible que algunos no carguen */

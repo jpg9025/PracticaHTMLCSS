@@ -6,6 +6,8 @@ body {
     background-color: blue;
     width: 20%;
     height: 20%;
+    align-content: center;
+    align-items: center;
 }
 
 #checkbox-like + label {
@@ -20,8 +22,16 @@ body {
     display: none;
 }
 
+.checkbox-like-label {
+    z-index: 3;
+}
+
 #checkbox-like {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    top: 70px;
+    left: 62px;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    background-color: purple;
 }
