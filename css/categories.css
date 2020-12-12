@@ -19,6 +19,7 @@
     margin-top: 0;
     text-align: left;
     padding: 1rem;
+    font-size: 1.5rem;
 }
 
 @media (max-width: 770px) {
@@ -51,6 +52,10 @@
 
     .film-desc h3 a {
         color: whitesmoke;
+    }
+
+    .film-desc p {
+        margin-bottom: 0;
     }
 }
 

@@ -10,7 +10,7 @@
 
 body{
   background-color:#251638;
-  font-family: 'Roboto';
+  font-family: 'sans-serif' ;
   box-sizing: border-box;
   color: rgb(24, 23, 23);
 }
@@ -23,7 +23,7 @@ html {
 h1, h2 {
   position: center;
   color: white;
-  font-family: 'Texturina';
+  font-family: 'Fredericka the Great';
   text-align: center;
   text-shadow: rgb(124, 116, 116) 2px 2px 2px;
 }
