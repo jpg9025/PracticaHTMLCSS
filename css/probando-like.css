@@ -3,35 +3,27 @@ body {
 }
 
 .like {
-    background-color: blue;
     width: 20%;
     height: 20%;
     align-content: center;
     align-items: center;
 }
 
-#checkbox-like + label {
+#checkbox-like {
+    visibility: hidden;
+}
+
+#checkbox-like:not(:checked) ~ .likepending-img {
     display: none;
-}
-
-#checkbox-like:checked + label {
-    display: block;
-}
-
-#checkbox-like:checked ~ .likepending-img {
-    display: none;
-}
-
-.checkbox-like-label {
-    z-index: 3;
 }
 
 #checkbox-like {
-    position: absolute;
     top: 70px;
     left: 62px;
     width: 40px;
     height: 40px;
-    z-index: 1;
-    background-color: purple;
+}
+
+#checkbox-like:checked + label {
+    display: none;
 }
