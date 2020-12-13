@@ -26,6 +26,7 @@ h1, h2 {
   font-family: 'Fredericka the Great';
   text-align: center;
   text-shadow: rgb(124, 116, 116) 2px 2px 2px;
+  font-weight: normal;
 }
 
 h1 {
@@ -38,6 +39,10 @@ h2 {
   font-size: 40px;
   margin: 0.8rem;
   padding: 0.8rem;
+}
+
+h3 {
+  width: 80%;
 }
 
 /*main {

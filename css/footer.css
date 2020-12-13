@@ -15,15 +15,16 @@ footer {
     margin-bottom: 0;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .logo-footer {
     font-family: 'Fredericka the Great';
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem;
 }
 
 .links-footer a {
-    margin: 1rem;
+    margin: 0.5rem;
 }

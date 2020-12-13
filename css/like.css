@@ -1,0 +1,30 @@
+.like {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    margin: 0;
+    width: 25%;
+    height: 25%;
+}
+
+#checkbox-like {
+    visibility: hidden;
+}
+
+#checkbox-like:not(:checked) ~ .likepending-img {
+    display: none;
+}
+
+#checkbox-like {
+    top: 70px;
+    left: 62px;
+    width: 40px;
+    height: 40px;
+}
+
+#checkbox-like:checked + label {
+    display: none;
+}
+
+/* He conseguido crear el sistema de like, pero accionando cualquier etiqueta sólo me cambia la 1a de cada página
+creo que es por las clases, pero no romper la relación sin generar una hoja de estilos like.css eterna con relaciones de dependencia */
