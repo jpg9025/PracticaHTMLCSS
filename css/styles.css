@@ -8,6 +8,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+/* Con esta propiedad se hace que el scroll del ratón sea más suave para la mayoría de navegadores */
+
 body{
   background-color:#251638;
   font-family: 'sans-serif' ;
@@ -15,10 +20,20 @@ body{
   color: rgb(24, 23, 23);
 }
 
-html {
-  scroll-behavior: smooth;
+main {
+  margin-top: calc(var(--navigation-bar-height) + 15px);
 }
-/* Con esta propiedad se hace que el scroll del ratón sea más suave para la mayoría de navegadores */
+/* la variable de la altura de navegación y los 15px de la sombras de los h1 para que no corte la barra */
+
+.header-container {
+  position: relative;
+  width: 75%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 15px 0 0 #251638, -15px 0 0 #251638, 0 -15px 0 #251638, -15px -15px 0 #251638, 15px -15px 0 #251638, 0 1px 10px rgb(241, 226, 226);
+}
 
 h1, h2 {
   position: center;
@@ -49,7 +64,3 @@ h3 {
   position: absolute;
   top: var(--navigation-bar-height);
 }*/
-
-main {
-  margin-top: var(--navigation-bar-height);
-}
