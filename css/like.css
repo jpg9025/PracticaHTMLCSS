@@ -7,24 +7,96 @@
     height: 25%;
 }
 
-#checkbox-like {
+/* Novedades - Newest */
+#checkbox-like-n-i-1, #checkbox-like-n-i-2, #checkbox-like-n-i-3, #checkbox-like-n-i-4 {
     visibility: hidden;
-}
-
-#checkbox-like:not(:checked) ~ .likepending-img {
-    display: none;
-}
-
-#checkbox-like {
     top: 70px;
     left: 62px;
     width: 40px;
     height: 40px;
 }
-
-#checkbox-like:checked + label {
+#checkbox-like-n-i-1:not(:checked) ~ .likepending-img-n-i-1, #checkbox-like-n-i-2:not(:checked) ~ .likepending-img-n-i-2, #checkbox-like-n-i-3:not(:checked) ~ .likepending-img-n-i-3, #checkbox-like-n-i-4:not(:checked) ~ .likepending-img-n-i-4 {
+    display: none;
+}
+#checkbox-like-n-i-1:checked + label, #checkbox-like-n-i-2:checked + label, #checkbox-like-n-i-3:checked + label, #checkbox-like-n-i-4:checked + label {
     display: none;
 }
 
-/* He conseguido crear el sistema de like, pero accionando cualquier etiqueta sólo me cambia la 1a de cada página
-creo que es por las clases, pero no romper la relación sin generar una hoja de estilos like.css eterna con relaciones de dependencia */
+
+/* Zombies */
+#checkbox-like-z-i-1, #checkbox-like-z-i-2, #checkbox-like-z-i-3, #checkbox-like-z-i-4 {
+    visibility: hidden;
+    top: 70px;
+    left: 62px;
+    width: 40px;
+    height: 40px;
+}
+#checkbox-like-z-i-1:not(:checked) ~ .likepending-img-z-i-1, #checkbox-like-z-i-2:not(:checked) ~ .likepending-img-z-i-2, #checkbox-like-z-i-3:not(:checked) ~ .likepending-img-z-i-3, #checkbox-like-z-i-4:not(:checked) ~ .likepending-img-z-i-4 {
+    display: none;
+}
+#checkbox-like-z-i-1:checked + label, #checkbox-like-z-i-2:checked + label, #checkbox-like-z-i-3:checked + label, #checkbox-like-z-i-4:checked + label {
+    display: none;
+}
+
+
+/*Vampiros - vampires*/
+#checkbox-like-v-i-1, #checkbox-like-v-i-2, #checkbox-like-v-i-3, #checkbox-like-v-i-4 {
+    visibility: hidden;
+    top: 70px;
+    left: 62px;
+    width: 40px;
+    height: 40px;
+}
+#checkbox-like-v-i-1:not(:checked) ~ .likepending-img-v-i-1, #checkbox-like-v-i-2:not(:checked) ~ .likepending-img-v-i-2, #checkbox-like-v-i-3:not(:checked) ~ .likepending-img-v-i-3, #checkbox-like-v-i-4:not(:checked) ~ .likepending-img-v-i-4 {
+    display: none;
+}
+#checkbox-like-v-i-1:checked + label, #checkbox-like-v-i-2:checked + label, #checkbox-like-v-i-3:checked + label, #checkbox-like-v-i-4:checked + label {
+    display: none;
+}
+
+
+/*Asesinos - stabs*/
+#checkbox-like-s-i-1, #checkbox-like-s-i-2, #checkbox-like-s-i-3, #checkbox-like-s-i-4 {
+    visibility: hidden;
+    top: 70px;
+    left: 62px;
+    width: 40px;
+    height: 40px;
+}
+#checkbox-like-s-i-1:not(:checked) ~ .likepending-img-s-i-1, #checkbox-like-s-i-2:not(:checked) ~ .likepending-img-s-i-2, #checkbox-like-s-i-3:not(:checked) ~ .likepending-img-s-i-3, #checkbox-like-s-i-4:not(:checked) ~ .likepending-img-s-i-4 {
+    display: none;
+}
+#checkbox-like-s-i-1:checked + label, #checkbox-like-s-i-2:checked + label, #checkbox-like-s-i-3:checked + label, #checkbox-like-s-i-4:checked + label {
+    display: none;
+}
+
+
+/*Sucesos paranormales - paranormal*/
+#checkbox-like-p-i-1, #checkbox-like-p-i-2, #checkbox-like-p-i-3, #checkbox-like-p-i-4 {
+    visibility: hidden;
+    top: 70px;
+    left: 62px;
+    width: 40px;
+    height: 40px;
+}
+#checkbox-like-p-i-1:not(:checked) ~ .likepending-img-p-i-1, #checkbox-like-p-i-2:not(:checked) ~ .likepending-img-p-i-2, #checkbox-like-p-i-3:not(:checked) ~ .likepending-img-p-i-3, #checkbox-like-p-i-4:not(:checked) ~ .likepending-img-p-i-4 {
+    display: none;
+}
+#checkbox-like-p-i-1:checked + label, #checkbox-like-p-i-2:checked + label, #checkbox-like-p-i-3:checked + label, #checkbox-like-p-i-4:checked + label {
+    display: none;
+}
+
+/*Pestaña detalle, contenido relacionado - detail screem, related content*/
+#checkbox-like-s-c-i-1, #checkbox-like-s-c-i-2, #checkbox-like-s-c-i-3, #checkbox-like-s-c-i-4, #checkbox-like-s-c-i-5 {
+    visibility: hidden;
+    top: 70px;
+    left: 62px;
+    width: 40px;
+    height: 40px;
+}
+#checkbox-like-s-c-i-1:not(:checked) ~ .likepending-img-s-c-i-1, #checkbox-like-s-c-i-2:not(:checked) ~ .likepending-img-s-c-i-2, #checkbox-like-s-c-i-3:not(:checked) ~ .likepending-img-s-c-i-3, #checkbox-like-s-c-i-4:not(:checked) ~ .likepending-img-s-c-i-4, #checkbox-like-s-c-i-5:not(:checked) ~ .likepending-img-s-c-i-5 {
+    display: none;
+}
+#checkbox-like-s-c-i-1:checked + label, #checkbox-like-s-c-i-2:checked + label, #checkbox-like-s-c-i-3:checked + label, #checkbox-like-s-c-i-4:checked + label, #checkbox-like-s-c-i-5:checked + label {
+    display: none;
+}
